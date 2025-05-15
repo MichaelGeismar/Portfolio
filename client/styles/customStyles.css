@@ -101,9 +101,51 @@
 .TabContentFooter {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   padding-inline: 1rem;
-  height: 2rem;
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.FooterContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 30%;
+  letter-spacing: 1px;
+}
+
+.FooterHeaders {
+  font-size: 1.5rem;
+  color: #95d5b2;
+}
+
+.FooterLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.FooterLinks:hover {
+  background-color: #95d5b2;
+  transform: translateY(-3px);
+}
+
+.FooterFooter {
+  align-self: center;
+  letter-spacing: 1px;
+  border-top: 1px solid #ffffff;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  width: 95%;
+  text-align: center;
 }
 
 .MainPage {
@@ -121,8 +163,12 @@
 }
 
 .HeaderName {
+  font-size: 1.8rem;
   border-radius: 0.25rem;
   padding: 1rem;
+  font-weight: 700;
+  color: #1b4332;
+  letter-spacing: -0.5px;
 }
 
 /** Scrollbar styles **/

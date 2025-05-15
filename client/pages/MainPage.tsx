@@ -8,7 +8,7 @@ const MainPage = () => {
     { title: "Open Source", id: 3 },
     { title: "Technologies", id: 4 },
     // { title: "Projects", id: 5 },
-    { title: "Contact", id: 6 },
+    // { title: "Contact", id: 6 },
   ];
 
   return <div className="MainPage ">{<TabLayout sections={sections} />}</div>;

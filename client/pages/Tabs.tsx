@@ -1,5 +1,6 @@
 import { Tabs } from "@base-ui-components/react/tabs";
 import TabContent from "./TabContent";
+import Footer from "./SectionComponents/Footer";
 
 const TabLayout = ({
   sections,
@@ -36,6 +37,7 @@ const TabLayout = ({
         <TabContent section={section} />
       </Tabs.Panel>
     ))}
+    <Footer />
   </Tabs.Root>
 );
 export default TabLayout;
