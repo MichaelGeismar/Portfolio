@@ -3,7 +3,6 @@ import {
   blurb,
   passions,
   jobTitles,
-  techTalks,
   education,
   coreSkills,
 } from "../data/aboutInfo";
@@ -16,7 +15,7 @@ const About = () => {
         <CustomCard title={"Past"} content={intro} />
         <CustomCard title={"Professional"} content={blurb} />
       </div>
-      <div className="flex space-around flex-wrap gap-x-28 gap-y-8">
+      <div className="flex gap-x-4 gap-y-8">
         <CustomCard
           title={"Job Titles"}
           content={
@@ -33,16 +32,6 @@ const About = () => {
             <ul>
               {coreSkills.map((skill, i) => (
                 <li key={i}>{skill}</li>
-              ))}
-            </ul>
-          }
-        />
-        <CustomCard
-          title={"Tech Talks"}
-          content={
-            <ul>
-              {techTalks.map((techTalk, i) => (
-                <li key={i}>{techTalk}</li>
               ))}
             </ul>
           }

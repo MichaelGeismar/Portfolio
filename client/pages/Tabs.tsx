@@ -14,7 +14,7 @@ const TabLayout = ({
     defaultValue={sections[0].title}
   >
     <div className="flex mx-8 mt-4 column min-h-[4rem] mb-4">
-      <div className="w-22 size-16 rounded-full bg-radial-[at_75%_25%] from-white to-green-900 to-75%"></div>
+      <div className="w-24 size-16 rounded-full bg-radial-[at_75%_25%] from-white to-green-900 to-75%"></div>
       <p className="HeaderName text-2xl ms-4 content-center whitespace-nowrap">
         {" "}
         Michael Geismar{" "}
@@ -30,7 +30,7 @@ const TabLayout = ({
     </div>
     {sections.map((section: { title: string; id: number }) => (
       <Tabs.Panel
-        className={"Panel flex-grow bg-[#8fbc8f]"}
+        className={"Panel flex-grow"}
         key={section.id}
         value={section.title}
       >
