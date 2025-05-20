@@ -7,6 +7,7 @@ import {
   coreSkills,
 } from "../data/aboutInfo";
 import CustomCard from "../customComponents/CustomCard";
+import CustomSecondaryCard from "../customComponents/CustomSecondaryCard";
 
 const About = () => {
   return (
@@ -15,18 +16,20 @@ const About = () => {
         <CustomCard title={"Past"} content={intro} />
         <CustomCard title={"Professional"} content={blurb} />
       </div>
-      <div className="flex gap-x-4 gap-y-8">
-        <CustomCard
+      <div className="flex flex-col gap-x-4 gap-y-8 w-full">
+        <CustomSecondaryCard
           title={"Job Titles"}
           content={
             <ul>
               {jobTitles.map((jobTitle, i) => (
-                <li key={i}>{jobTitle}</li>
+                <li className="px-1 py-1" key={i}>
+                  {jobTitle}
+                </li>
               ))}
             </ul>
           }
         />
-        <CustomCard
+        <CustomSecondaryCard
           title={"Core Skills"}
           content={
             <ul>
@@ -36,7 +39,7 @@ const About = () => {
             </ul>
           }
         />
-        <CustomCard
+        <CustomSecondaryCard
           title={"Education"}
           content={
             <ul>
@@ -48,7 +51,7 @@ const About = () => {
             </ul>
           }
         />
-        <CustomCard
+        <CustomSecondaryCard
           title={"Passions"}
           content={
             <ul>
