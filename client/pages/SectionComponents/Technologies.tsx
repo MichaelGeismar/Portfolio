@@ -7,7 +7,7 @@ import CustomCard from "../customComponents/CustomCard";
 
 const Technologies = () => {
   return (
-    <div>
+    <div className="space-y-8 w-full">
       <CustomCard
         title={"Fluent Technologies"}
         content={

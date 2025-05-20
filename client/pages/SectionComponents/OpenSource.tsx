@@ -3,7 +3,7 @@ import CustomCard from "../customComponents/CustomCard";
 
 const OpenSource = () => {
   return (
-    <div>
+    <div className="flex flex-wrap gap-8">
       {openSourceExperience.map((openSourceJob, i) => (
         <CustomCard
           key={i}

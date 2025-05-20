@@ -171,6 +171,14 @@
   letter-spacing: -0.5px;
 }
 
+li::before {
+  content: "•";
+  color: #40916c;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  left: 0;
+}
+
 /** Scrollbar styles **/
 /* Hide scrollbar for Chrome, Safari and Opera */
 .invisible-scrollbar {
