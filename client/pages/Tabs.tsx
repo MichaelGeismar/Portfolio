@@ -30,6 +30,7 @@ const TabLayout = ({
     </div>
     {sections.map((section: { title: string; id: number }) => (
       <Tabs.Panel
+        keepMounted
         className={"Panel flex-grow"}
         key={section.id}
         value={section.title}
