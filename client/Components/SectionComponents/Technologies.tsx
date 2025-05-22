@@ -1,8 +1,8 @@
 import {
   familiarTechnologies,
   fluentTechnologies,
-} from "../data/technologiesInfo";
-import { techTalks } from "../data/aboutInfo";
+} from "../../data/technologiesInfo";
+import { techTalks } from "../../data/aboutInfo";
 import CustomCard from "../customComponents/CustomCard";
 
 const Technologies = () => {

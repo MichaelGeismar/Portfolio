@@ -1,4 +1,4 @@
-import openSourceExperience from "../data/openSourceJobs";
+import openSourceExperience from "../../data/openSourceJobs";
 import CustomCard from "../customComponents/CustomCard";
 
 const OpenSource = () => {

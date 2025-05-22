@@ -1,4 +1,4 @@
-import jobExperience from "../data/jobs";
+import jobExperience from "../../data/jobs";
 import CustomCard from "../customComponents/CustomCard";
 import CustomSecondaryCard from "../customComponents/CustomSecondaryCard";
 
