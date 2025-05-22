@@ -5,7 +5,7 @@ import {
   jobTitles,
   education,
   coreSkills,
-} from "../data/aboutInfo";
+} from "../../data/aboutInfo";
 import CustomCard from "../customComponents/CustomCard";
 import CustomSecondaryCard from "../customComponents/CustomSecondaryCard";
 
