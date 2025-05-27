@@ -1,6 +1,6 @@
 const Footer = () => (
   <footer className="TabContentFooter">
-    <div className="FooterContent px-20">
+    <div className="FooterContent px-20 flex flex-col md:flex-row">
       <div>
         <h3 className="FooterHeaders mb-4">Contact</h3>
         <p> Email: Michael.L.Geismar@gmail.com </p>
@@ -8,7 +8,7 @@ const Footer = () => (
         <p> Based in Arvada, CO </p>
       </div>
       <div>
-        <h3 className="FooterHeaders ms-2 mb-3">Links:</h3>
+        <h3 className="FooterHeaders md:ms-2 mb-3">Links:</h3>
         <div className="flex flex-row gap-10">
           <a
             href="https://github.com/MichaelGeismar"

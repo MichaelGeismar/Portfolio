@@ -32,9 +32,10 @@
   padding-inline: 1rem;
   padding-block: 0.5rem;
   height: 100%;
+  color: var(--color-gray-500);
 
   &[data-selected] {
-    color: var(--color-gray-700);
+    color: var(--color-gray-900);
   }
 
   @media (hover: hover) {
@@ -68,7 +69,6 @@
   width: var(--active-tab-width);
   height: 100%;
   border-radius: 0.25rem;
-  /* background-color: #95d5b2; */
   transition-property: translate, width;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
@@ -110,8 +110,6 @@
 
 .FooterContent {
   width: 100%;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 1rem;
   gap: 30%;
   letter-spacing: 1px;
