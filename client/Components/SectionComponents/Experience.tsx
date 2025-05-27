@@ -8,11 +8,10 @@ const Experience = () => {
       {jobExperience.map((job, i) => (
         <CustomSecondaryCard
           tailwindContentClasses="flex flex-col gap-8"
-          // hoverEffect={false}
           key={i}
           title={
             <>
-              <h2>{job.company}</h2>
+              <h2 className="font-semibold">{job.company}</h2>
               <h3>{job.role}</h3>
               <p>{job.dates}</p>
             </>
@@ -23,7 +22,7 @@ const Experience = () => {
               key={team.name}
               title={
                 <>
-                  <h4 className="font-bold">{team.name}</h4>
+                  <h4 className="">{team.name}</h4>
                 </>
               }
               content={
