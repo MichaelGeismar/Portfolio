@@ -1,8 +1,8 @@
 export const intro =
-  "I have always been passionate about technology. From the time when I was a little kid building video game private servers to play on with friends, to my middle school coding class, computers and engineering have been a part of my life. I love the challenge of solving problems and the satisfaction of creating something that works. I am a lifelong learner and am always looking for new ways to improve my skills and knowledge.";
+  "I have always been passionate about technology. From when I was a little kid building video game private servers to play on with friends, to my middle school coding class- computers and engineering have always been a part of my life. I love the challenge of solving problems and the satisfaction of creating something that works. I am a lifelong learner and am always looking for new ways to improve my skills and knowledge.";
 
 export const blurb =
-  "Frontend-focused Software Engineer with 4+ years of experience building and testing scalable React apps at Verily (Google Life Sciences). Skilled in TypeScript, testing frameworks (Jest, Cypress), and backend API development using RESTful APIs in addition to gRPC and Protocol Buffers. Strong communicator and mentor, passionate about creating user-first, accessible experiences and collaborating cross-functionally in Agile environments to ship production-grade code at scale. ";
+  "Frontend focused Software Engineer with 5+ years of experience building and testing scalable React apps at Verily (Google Life Sciences) as well as Vue apps at Motili. Skilled in TypeScript, testing frameworks (Jest, Cypress), and backend API development using RESTful APIs in addition to gRPC and Protocol Buffers. Strong communicator and mentor who is passionate about creating user first, accessible experiences and collaborating cross-functionally in Agile environments to ship production grade code at scale. ";
 
 export const passions = [
   "Basketball",
@@ -18,26 +18,27 @@ export const passions = [
 export const jobTitles = [
   "Software Engineer",
   "Frontend Engineer",
-  "Fullstack Engineer",
-  "API Developer",
+  "Full-Stack Engineer",
+  "Web Developer",
   "Mentor",
 ];
 
 export const techTalks = [
   "Accessibility (A11y) Best Practices",
   "Integration Testing 101",
+  "Gherkin Best Practices",
+  "PR Best Practices",
 ];
 
 export const coreSkills = [
-  "React Development",
-  "State Management",
+  "Frontend Development",
   "API Building",
   "Integration & Unit Testing",
   "Performance Optimization",
   "Agile/Scrum",
   "Mentorship",
   "Documentation",
-  "Team Collaboration",
+  "Team Culture Building",
 ];
 
 type Education = {

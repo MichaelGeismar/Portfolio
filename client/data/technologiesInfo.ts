@@ -4,15 +4,18 @@ export const fluentTechnologies = [
   "Javascript",
   "Jest",
   "Cypress",
+  "Gherkin",
   "Git",
   "CSS",
   "Material UI",
+  "Tailwind CSS",
 ];
 
 export const familiarTechnologies = [
+  "Vue.js",
   "Node.js",
+  "RTK Query",
   "Express.js",
-  "Tailwind CSS",
   "React-Router",
   "gRPC",
   "Go",

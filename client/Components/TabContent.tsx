@@ -20,7 +20,7 @@ const TabContent = ({
   }, [section]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full pb-5">
+    <div className="flex flex-col items-center justify-center h-full w-full pb-8 lg:px-20 md:px-12 sm:px:4">
       <div className="mb-12 py-16 w-screen text-white text-center text-4xl font-semibold bg-linear-to-r from-[#1b4332] to-[#2d6a4f]">
         {title}
       </div>

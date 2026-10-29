@@ -1,13 +1,12 @@
 import jobExperience from "../../data/jobs";
 import CustomCard from "../customComponents/CustomCard";
-import CustomSecondaryCard from "../customComponents/CustomSecondaryCard";
+import CardHolder from "../customComponents/CardHolder";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="flex flex-col space-y-12">
       {jobExperience.map((job, i) => (
-        <CustomSecondaryCard
-          tailwindContentClasses="flex flex-col gap-8"
+        <CardHolder
           key={i}
           title={
             <>
@@ -18,7 +17,7 @@ const Experience = () => {
           }
           content={job.teams.map((team) => (
             <CustomCard
-              hoverEffect={false}
+              hoverEffect={true}
               key={team.name}
               title={
                 <>

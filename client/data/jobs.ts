@@ -13,6 +13,37 @@ export type Team = {
 
 const jobExperience: Job[] = [
   {
+    company: "Contracts",
+    role: "",
+    dates: "",
+    teams: [
+      {
+        name: "Fortitude Systems | Client: Motili",
+        description: "Full-Stack Engineer | March 2026 - Present",
+        responsibilities: [
+          "Developed an internal feature in React that allows finance to manage clients payments.",
+          "Learned Vue to help create a large scale feature allowing for creation of work orders and leads for HVAC home solutions clients.",
+          "Building APIs in RTK Query and Loopback to allow optimized caching and calls across the stack.",
+          "Manage long term projects and wearing many hats to help fill in gaps between project management, QA and development team.",
+          "Leverage and organize AI agents through Claude console to produce high level, maintainable and readable human level code.",
+          "Involved with company carnivals and event planning improving team culture and community.",
+        ],
+      },
+      {
+        name: "Alpine Solutions Group | Client: Synchrony Bank",
+        description: "Frontend Engineer | May 2025 - March 2026",
+        responsibilities: [
+          "Handled releases for multiple different MFE’s ensuring all code was up to date, well documented, and well tested across the channel platform implementations.",
+          "Built bash scripts for tarball creation and migration, streamlining local MFE testing in channel apps.",
+          "Coordinated testing of release process, from image creation, to channel app migration and all of the necessary communication.",
+          "Detailed and improved best practices across the entire company for integration testing and Gherkin usage including an engineering wide tech talk.",
+          "One person Cypress team, helping build cypress automation coverage from 15% to 60% on one team while helping another team develop Gherkin best practices in a more mature cypress test suite.",
+          "Experience in Agile methodologies, including daily standups for team alignment, ticket grooming for clarity and effective backlog management to support efficient, asynchronous workflows.",
+        ],
+      },
+    ],
+  },
+  {
     company: "Verily Life Sciences (Alphabet/Google Life Sciences)",
     role: "Software Engineer",
     dates: "Nov 2021 - Nov 2024",
