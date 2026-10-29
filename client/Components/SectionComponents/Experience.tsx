@@ -1,33 +1,29 @@
 import jobExperience from "../../data/jobs";
-import CustomCard from "../customComponents/CustomCard";
 import CardHolder from "../customComponents/CardHolder";
+import CustomCard from "../customComponents/CustomCard";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col space-y-12">
-      {jobExperience.map((job, i) => (
+    <div className="flex w-full flex-col gap-8">
+      {jobExperience.map((job) => (
         <CardHolder
-          key={i}
+          key={job.company}
           title={
             <>
               <h2 className="font-semibold">{job.company}</h2>
-              <h3>{job.role}</h3>
-              <p>{job.dates}</p>
+              {job.role && <h3>{job.role}</h3>}
+              {job.dates && <p>{job.dates}</p>}
             </>
           }
           content={job.teams.map((team) => (
             <CustomCard
-              hoverEffect={true}
+              collapsible
               key={team.name}
-              title={
-                <>
-                  <h4 className="">{team.name}</h4>
-                </>
-              }
+              title={team.name}
               content={
                 <>
-                  <p className="font-semibold">{team.description}</p>
-                  <ul>
+                  <p className="mb-3 font-semibold">{team.description}</p>
+                  <ul className="space-y-2">
                     {team.responsibilities.map((responsibility, i) => (
                       <li key={i}>{responsibility}</li>
                     ))}

@@ -14,7 +14,7 @@ const TabLayout = ({
       }
       defaultValue={sections[0].title}
     >
-      <div className="flex flex-col md:flex-row mx-8 mt-4 min-h-fit md:min-h-[4rem] mb-4">
+      <div className="flex shrink-0 flex-col md:flex-row mx-8 mt-4 min-h-fit md:min-h-[4rem] mb-4">
         <div className="flex flex-row">
           <div className="w-16 transition-transform duration-300 hover:scale-130 aspect-square self-center rounded-full bg-radial-[at_75%_25%] from-white to-green-900 to-75%"></div>
           <p className="HeaderName text-2xl ms-4 content-center whitespace-nowrap">

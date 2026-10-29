@@ -1,11 +1,12 @@
 import { Card, CardContent, CardHeader } from "@mui/material";
-import React from "react";
+import React, { useMemo, useState } from "react";
 
 interface CustomCardProps {
   title: React.ReactNode;
   content: React.ReactNode;
-  tailwindContentClasses?: string; // Optional prop for additional Tailwind classes
-  hoverEffect?: boolean; // Optional prop to control hover effect
+  tailwindContentClasses?: string;
+  hoverEffect?: boolean;
+  collapsible?: boolean;
 }
 
 const CustomCard: React.FC<CustomCardProps> = ({
@@ -13,13 +14,19 @@ const CustomCard: React.FC<CustomCardProps> = ({
   content,
   tailwindContentClasses,
   hoverEffect = true,
-  // Optional prop to control hover effect
+  collapsible = false,
 }) => {
+  const [isCollapsed, setIsCollapsed] = useState(collapsible);
+
+  const isOpen = useMemo(() => {
+    return !collapsible || !isCollapsed;
+  }, [collapsible, isCollapsed]);
+
   return (
     <Card
       sx={{
         transition: hoverEffect
-          ? "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out" // MUI's way of defining the transition
+          ? "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
           : undefined,
         "&:hover": {
           transform: hoverEffect ? "translateY(-10px)" : undefined,
@@ -30,22 +37,37 @@ const CustomCard: React.FC<CustomCardProps> = ({
       }}
     >
       <CardHeader
-        // align="center"
         sx={{
           paddingBottom: "6px", // Remove bottom padding
           paddingTop: "12px",
         }}
         className="bg-[#2d6a4f] text-white font-semibold"
         title={title}
+        subheader={
+          collapsible
+            ? isCollapsed
+              ? "Click to expand"
+              : "Click to collapse"
+            : undefined
+        }
+        slotProps={{
+          subheader: {
+            style: { color: "white" },
+          },
+        }}
+        onClick={collapsible ? () => setIsCollapsed(!isCollapsed) : undefined}
       />
       <CardContent
-        sx={{ padding: "1rem" }}
+        sx={{
+          padding: isOpen ? "1rem" : 0,
+          paddingBottom: isOpen ? "24px" : "0px !important",
+        }}
         className={
           "text-[#666]" +
           (tailwindContentClasses ? ` ${tailwindContentClasses}` : "")
         }
       >
-        {content}
+        {isOpen && content}
       </CardContent>
     </Card>
   );
