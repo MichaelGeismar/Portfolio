@@ -1,6 +1,6 @@
 const Footer = () => (
   <footer className="TabContentFooter">
-    <div className="FooterContent px-20 flex flex-col md:flex-row">
+    <div className="FooterContent px-4 flex flex-col md:flex-row">
       <div>
         <h3 className="FooterHeaders mb-4">Contact</h3>
         <p> Email: Michael.L.Geismar@gmail.com </p>

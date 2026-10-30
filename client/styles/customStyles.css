@@ -104,13 +104,14 @@
   padding-inline: 1rem;
   background-color: #1b4332;
   color: #ffffff;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .FooterContent {
   width: 100%;
+  margin-left: 25%;
   margin-bottom: 1rem;
-  gap: 30%;
+  gap: 8vw;
   letter-spacing: 1px;
 }
 

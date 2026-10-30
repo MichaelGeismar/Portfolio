@@ -38,8 +38,9 @@ const CustomCard: React.FC<CustomCardProps> = ({
     >
       <CardHeader
         sx={{
-          paddingBottom: "6px", // Remove bottom padding
+          paddingBottom: "6px",
           paddingTop: "12px",
+          paddingInline: "2.5rem",
         }}
         className="bg-[#2d6a4f] text-white font-semibold"
         title={title}
@@ -59,6 +60,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
       />
       <CardContent
         sx={{
+          paddingInline: "3rem !important",
           padding: isOpen ? "1rem" : 0,
           paddingBottom: isOpen ? "24px" : "0px !important",
         }}

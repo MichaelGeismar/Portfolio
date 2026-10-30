@@ -30,7 +30,7 @@ const CustomSecondaryCard: React.FC<CustomCardProps> = ({ title, content }) => {
         title={title}
       />
       <CardContent
-        className="text-[#666] flex flex-col gap-8 px-8!"
+        className="text-[#666] flex flex-col gap-8 px-16!"
         sx={{
           borderLeft: "4px solid #2d6a4f",
           borderRight: "4px solid #2d6a4f",

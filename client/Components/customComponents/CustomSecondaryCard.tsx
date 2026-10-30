@@ -4,7 +4,7 @@ import React from "react";
 interface CustomCardProps {
   title: React.ReactNode;
   content: React.ReactNode;
-  tailwindContentClasses?: string; // Optional prop for additional Tailwind classes
+  tailwindContentClasses?: string;
 }
 
 const CustomSecondaryCard: React.FC<CustomCardProps> = ({
@@ -15,7 +15,7 @@ const CustomSecondaryCard: React.FC<CustomCardProps> = ({
   return (
     <Card
       sx={{
-        transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out", // MUI's way of defining the transition
+        transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         "&:hover": {
           transform: "translateY(-10px)",
           boxShadow: "0 12px 24px rgba(0, 0, 0, 0.12)",
@@ -23,17 +23,18 @@ const CustomSecondaryCard: React.FC<CustomCardProps> = ({
       }}
     >
       <CardHeader
-        // align="center"
         sx={{
-          borderTop: "4px solid #2d6a4f", // Add top border
-          paddingBottom: "6px", // Remove bottom padding
+          borderBottom: "1px solid #2d6a4f",
+          borderTop: "4px solid #2d6a4f",
+          paddingBottom: "6px",
           paddingTop: "12px",
+          paddingInline: "2.5rem",
         }}
         className="text-[#2d6a4f] font-semibold"
         title={title}
       />
       <CardContent
-        sx={{ padding: "1rem" }}
+        sx={{ paddingInline: "3rem" }}
         className={
           "text-[#666]" +
           (tailwindContentClasses ? ` ${tailwindContentClasses}` : "")
