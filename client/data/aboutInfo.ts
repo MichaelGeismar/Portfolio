@@ -1,18 +1,20 @@
 export const intro =
-  "I have always been passionate about technology. From when I was a little kid building video game private servers to play on with friends, to my middle school coding class- computers and engineering have always been a part of my life. I love the challenge of solving problems and the satisfaction of creating something that works. I am a lifelong learner and am always looking for new ways to improve my skills and knowledge.";
+  "I’ve been passionate about technology for as long as I can remember, from building video game private servers with friends as a kid to my middle school coding class. I love solving problems and the satisfaction of building something that works. I’m always looking for new ways to sharpen my skills whether that be in the frontend, backend or cooking in the kitchen.";
 
 export const blurb =
-  "Frontend focused Software Engineer with 5+ years of experience building and testing scalable React apps at Verily (Google Life Sciences) as well as Vue apps at Motili. Skilled in TypeScript, testing frameworks (Jest, Cypress), and backend API development using RESTful APIs in addition to gRPC and Protocol Buffers. Strong communicator and mentor who is passionate about creating user first, accessible experiences and collaborating cross-functionally in Agile environments to ship production grade code at scale. ";
+  "Software Engineer with 5+ years of experience building and testing scalable web apps with React, TypeScript, RTK query, Node, Jest, and Cypress, including clinical-trial tooling at Verily (Alphabet) and banking dashboards at Synchrony.";
 
 export const passions = [
+  "Cooking",
   "Basketball",
-  "Snowboarding",
   "Manga",
+  "Snowboarding",
+  "Video Games",
   "Hiking",
   "Music",
   "Fitness",
+  "Backpacking",
   "Camping",
-  "Cooking",
 ];
 
 export const jobTitles = [
@@ -24,20 +26,22 @@ export const jobTitles = [
 ];
 
 export const techTalks = [
-  "Accessibility (A11y) Best Practices",
-  "Integration Testing 101",
-  "Gherkin Best Practices",
-  "PR Best Practices",
+  "Accessibility (A11y) Best Practices - Verily",
+  "Integration Testing 101 - Synchrony",
+  "Gherkin Best Practices - Synchrony",
+  "PR Best Practices - Motili",
 ];
 
 export const coreSkills = [
   "Frontend Development",
+  "State Management",
   "API Building",
   "Integration & Unit Testing",
   "Performance Optimization",
   "Agile/Scrum",
-  "Mentorship",
+  "Communication",
   "Documentation",
+  "Mentorship",
   "Team Culture Building",
 ];
 

@@ -3,16 +3,20 @@ export const fluentTechnologies = [
   "TypeScript",
   "Javascript",
   "Jest",
+  "JSWire",
   "Cypress",
   "Gherkin",
   "Git",
   "CSS",
+  "HTML",
   "Material UI",
   "Tailwind CSS",
 ];
 
 export const familiarTechnologies = [
   "Vue.js",
+  "Soy/Wiz",
+  "Cider",
   "Node.js",
   "RTK Query",
   "Express.js",
@@ -22,7 +26,6 @@ export const familiarTechnologies = [
   "Python",
   "Protocol Buffers",
   "Google Cloud Monitoring",
-  "HTML",
   "PostgreSQL",
   "MongoDB",
 ];

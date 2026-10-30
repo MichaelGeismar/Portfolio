@@ -4,6 +4,5 @@ const sections = [
   { title: "Open Source", id: 3 },
   { title: "Technologies", id: 4 },
   // { title: "Projects", id: 5 },
-  // { title: "Contact", id: 6 },
 ];
 export default sections;
