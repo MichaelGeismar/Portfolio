@@ -83,8 +83,7 @@
   height: fit-content;
   outline: 0;
   padding-inline: 2rem;
-  /* margin-top: 1rem; */
-  /* box-shadow: 10px 12px 12px 12px darkgreen; */
+  margin-top: 1rem;
   padding-bottom: 2rem;
 
   &:focus-visible {
@@ -152,14 +151,6 @@
   height: 100vh;
 }
 
-.Contact {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding-inline: 1rem;
-  height: 2rem;
-}
-
 .HeaderName {
   font-size: 1.8rem;
   border-radius: 0.25rem;
@@ -177,13 +168,10 @@ li::before {
   left: 0;
 }
 
-/** Scrollbar styles **/
-/* Hide scrollbar for Chrome, Safari and Opera */
 .invisible-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
-  /* Chrome/Safari */
   &::-webkit-scrollbar {
     width: 0px;
     height: 0px;

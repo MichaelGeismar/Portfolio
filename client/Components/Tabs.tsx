@@ -10,7 +10,7 @@ const TabLayout = ({
   return (
     <Tabs.Root
       className={
-        "Tabs flex flex-col h-screen overflow-y-scroll invisible-scrollbar"
+        "Tabs flex flex-col min-h-screen overflow-y-scroll invisible-scrollbar"
       }
       defaultValue={sections[0].title}
     >
