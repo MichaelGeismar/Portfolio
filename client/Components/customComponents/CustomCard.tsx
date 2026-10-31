@@ -60,12 +60,11 @@ const CustomCard: React.FC<CustomCardProps> = ({
       />
       <CardContent
         sx={{
-          paddingInline: "3rem !important",
-          padding: isOpen ? "1rem" : 0,
+          paddingTop: isOpen ? "1rem" : 0,
           paddingBottom: isOpen ? "24px" : "0px !important",
         }}
         className={
-          "text-[#666]" +
+          "text-[#131111] md:px-12!" +
           (tailwindContentClasses ? ` ${tailwindContentClasses}` : "")
         }
       >
