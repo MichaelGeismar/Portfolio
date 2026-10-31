@@ -14,15 +14,14 @@ const TabLayout = ({
       }
       defaultValue={sections[0].title}
     >
-      <div className="flex shrink-0 flex-col md:flex-row mx-8 mt-4 min-h-fit md:min-h-[4rem] mb-4">
-        <div className="flex flex-row">
+      <div className="flex shrink-0 flex-col lg:flex-row mx-8 mt-4 min-h-fit md:min-h-[4rem] mb-4">
+        <div className="flex flex-row pb-4 justify-center lg:justify-start">
           <div className="w-16 transition-transform duration-300 hover:scale-130 aspect-square self-center rounded-full bg-radial-[at_75%_25%] from-white to-green-900 to-75%"></div>
           <p className="HeaderName text-2xl ms-4 content-center whitespace-nowrap">
-            {" "}
-            Michael Geismar{" "}
+            Michael Geismar
           </p>
         </div>
-        <Tabs.List className={"List flex flex-col md:flex-row"}>
+        <Tabs.List className={"List flex flex-col lg:flex-row"}>
           {sections.map((section: { title: string; id: number }) => (
             <Tabs.Tab className={"Tab"} value={section.title} key={section.id}>
               {section.title}
