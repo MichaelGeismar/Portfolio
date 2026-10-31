@@ -37,12 +37,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
       }}
     >
       <CardHeader
-        sx={{
-          paddingBottom: "6px",
-          paddingTop: "12px",
-          paddingInline: "2.5rem",
-        }}
-        className="bg-[#2d6a4f] text-white font-semibold"
+        className="bg-[#2d6a4f] text-white font-semibold pt-3 pb-1.5 md:px-10! px-4"
         title={title}
         subheader={
           collapsible

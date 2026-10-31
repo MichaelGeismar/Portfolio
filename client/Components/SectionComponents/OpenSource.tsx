@@ -15,8 +15,8 @@ const OpenSource = () => {
           content={
             <>
               <h3>{openSourceJob.role}</h3>
-              <p>{openSourceJob.dates}</p>
-              <p>{openSourceJob.description}</p>
+              <h4>{openSourceJob.dates}</h4>
+              <h5>{openSourceJob.description}</h5>
               <ul>
                 {openSourceJob.responsibilities.map((responsibility, i) => (
                   <li key={i}>{responsibility}</li>
