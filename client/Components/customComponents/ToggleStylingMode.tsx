@@ -4,20 +4,17 @@ function ToggleStylingMode() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <>
+    <label className="ThemeToggle">
       <span className="ThemeToggleText">
         {theme === "dark" ? "Dark Mode" : "Light Mode"}
       </span>
-
-      <label className="ThemeToggle">
-        <input
-          type="checkbox"
-          checked={theme === "dark"}
-          onChange={toggleTheme}
-        />
-        <span className="slider"></span>
-      </label>
-    </>
+      <input
+        type="checkbox"
+        checked={theme === "dark"}
+        onChange={toggleTheme}
+      />
+      <span className="slider" aria-hidden="true" />
+    </label>
   );
 }
 
