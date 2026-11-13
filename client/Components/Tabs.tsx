@@ -1,5 +1,6 @@
 import { Tabs } from "@base-ui-components/react/tabs";
 import TabContent from "./TabContent";
+import ToggleStylingMode from "./customComponents/ToggleStylingMode";
 import Footer from "./SectionComponents/Footer";
 
 const TabLayout = ({
@@ -21,6 +22,7 @@ const TabLayout = ({
             Michael Geismar
           </p>
         </div>
+        <ToggleStylingMode />
         <Tabs.List className={"List flex flex-col lg:flex-row"}>
           {sections.map((section: { title: string; id: number }) => (
             <Tabs.Tab className={"Tab"} value={section.title} key={section.id}>
