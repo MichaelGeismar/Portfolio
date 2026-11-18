@@ -7,6 +7,7 @@ interface CustomCardProps {
   tailwindContentClasses?: string;
   hoverEffect?: boolean;
   collapsible?: boolean;
+  shadowColor?: string;
 }
 
 const CustomCard: React.FC<CustomCardProps> = ({
@@ -15,6 +16,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
   tailwindContentClasses,
   hoverEffect = true,
   collapsible = false,
+  shadowColor,
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(collapsible);
 
@@ -25,13 +27,14 @@ const CustomCard: React.FC<CustomCardProps> = ({
   return (
     <Card
       sx={{
+        boxShadow: shadowColor ? `0 2px 8px ${shadowColor}` : undefined,
         transition: hoverEffect
           ? "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
           : undefined,
         "&:hover": {
           transform: hoverEffect ? "translateY(-10px)" : undefined,
           boxShadow: hoverEffect
-            ? "0 12px 24px rgba(0, 0, 0, 0.12)"
+            ? `0 12px 24px ${shadowColor ?? "rgba(0, 0, 0, 0.12)"}`
             : undefined,
         },
       }}

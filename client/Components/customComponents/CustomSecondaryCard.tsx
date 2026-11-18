@@ -30,7 +30,7 @@ const CustomSecondaryCard: React.FC<CustomCardProps> = ({
           paddingTop: "12px",
           paddingInline: "2.5rem",
         }}
-        className="text-[#2d6a4f] font-semibold"
+        className="ThemeSecondaryCardHeader text-[#2d6a4f] font-semibold"
         title={title}
       />
       <CardContent

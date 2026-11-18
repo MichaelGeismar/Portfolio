@@ -177,3 +177,143 @@ li::before {
     height: 0px;
   }
 }
+
+.ThemeToggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  gap: 0.65rem;
+  border: 1px solid #c8d8ce;
+  border-radius: 999px;
+  background: #f6faf7;
+  color: #1b4332;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.45rem 0.65rem 0.45rem 0.85rem;
+  white-space: nowrap;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.ThemeToggle input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.ThemeToggle .slider {
+  display: inline-flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: #a6b4aa;
+  transition: background-color 180ms ease;
+}
+
+.ThemeToggle .slider::before {
+  width: 1rem;
+  height: 1rem;
+  margin-inline-start: 0.2rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
+  content: "";
+  transition: transform 180ms ease;
+}
+
+.ThemeToggle input:checked ~ .slider {
+  background: #0e633e;
+}
+
+.ThemeToggle input:checked ~ .slider::before {
+  transform: translateX(1.1rem);
+}
+
+.ThemeToggle input:focus-visible ~ .slider {
+  outline: 2px solid #40916c;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .ThemeToggle:hover {
+    border-color: #40916c;
+    background: #e8f3ec;
+  }
+}
+
+.dark-mode {
+  color-scheme: dark;
+  background: #121a16;
+  color: #e8eee9;
+
+  body,
+  .Tabs {
+    background: #121a16;
+    color: #e8eee9;
+  }
+
+  .Tabs {
+    border-color: #34483c;
+  }
+
+  .HeaderName {
+    color: #b7e4c7;
+  }
+
+  .Tab,
+  .Tab[data-selected] {
+    color: #d7e0da;
+  }
+
+  .ThemeToggle {
+    border-color: #74c69d;
+    background: #1e2923;
+    color: #d8f3e3;
+  }
+
+  .ThemeToggle .slider {
+    background: #60746a;
+  }
+
+  .ThemeToggle input:checked ~ .slider {
+    background: #52b788;
+  }
+
+  .MuiPaper-root {
+    background-color: #1e2923;
+    color: #e8eee9;
+  }
+
+  .MuiCardContent-root {
+    color: #d7e0da !important;
+  }
+
+  .ThemeSecondaryCardHeader .MuiCardHeader-title {
+    color: #d8f3e3;
+  }
+}
+
+@media (hover: hover) {
+  .dark-mode .ThemeToggle:hover {
+    border-color: #95d5b2;
+    background: #2a4637;
+    box-shadow: 0 0 0 2px rgb(82 183 136 / 22%);
+  }
+}
+
+@media (max-width: 1023px) {
+  .dark-mode .Tab[data-selected] {
+    border-radius: 0.25rem;
+    background-color: #244b37;
+    box-shadow: inset 3px 0 #52b788;
+    color: #f1fff5;
+  }
+}

@@ -19,6 +19,7 @@ const Experience = () => {
             <CustomCard
               collapsible
               key={team.name}
+              shadowColor="rgba(14, 99, 62, 0.35)"
               title={team.name}
               content={
                 <>
